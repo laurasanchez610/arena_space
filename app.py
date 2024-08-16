@@ -2,8 +2,19 @@ import streamlit as st
 import pandas as pd
 import time
 
+
+
+# Creamos columnas para mostrar los filtros de fecha
+col1, col2 = st.columns(2)
+with col1:
+    st.image("logo.jpg", width=200)
+with col2:
+    st.title("Arena Space - Gestión de Tiempos")
+
+
+
 # Título del aplicativo
-st.title("Arena Space - Gestión de Tiempos")
+# st.title("Arena Space - Gestión de Tiempos")
 
 # Crear un dataframe para almacenar la información de los niños
 if 'data' not in st.session_state:
